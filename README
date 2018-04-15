@@ -54,8 +54,8 @@ Command: bin/spring stop
 
 * You can login based on both field username/email .
 For ex:
-        email: demo@cybrilla.com
-        username: demo
+        email: demo@xyz.com
+        username: xyz
 
 
 * I have written testcase inside "spec" folder for controller and model.
