@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <h3>Url Lists</h3>
+    <div class="column">
+      <table class="table">
+        <tbody>
+        <% @urls.each do |url| %>
+            <tr>
+              <td class="main_url">
+              <%= url.main_url %><br /><br />
+            </td>
+            <td>
+              <%= link_to url.shortener_url, url.shortener_url, target: "_blank" %><br /><br />
+            </td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<%= link_to "Create another Url", root_path , :class => "url_button"%>

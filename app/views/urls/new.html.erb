@@ -1,0 +1,10 @@
+<%= flash[:notice]%>
+<h1>Create a new URL Shortener:</h1>
+
+<%= form_for "", url: urls_path, method: :post do |f| %>
+ <%= f.text_field :url %>
+ <%= f.submit "Url Shortener" %>
+<% end %>
+
+
+
